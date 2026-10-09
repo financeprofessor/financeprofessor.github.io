@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Dr. Prashant Kumar Gupta is an Assistant Professor of Accounting and Finance at the School of Management, Mahindra University, Hyderabad. Research on corporate governance, bank asset quality and CBDC.">
+<meta property="og:title" content="Dr. Prashant Kumar Gupta">
+<meta property="og:description" content="Dr. Prashant Kumar Gupta is an Assistant Professor of Accounting and Finance at the School of Management, Mahindra University, Hyderabad. Research on corporate governance, bank asset quality and CBDC.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23F4A917'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' text-anchor='middle' fill='%2312312F'%3EPG%3C/text%3E%3C/svg%3E">
+<title>Dr. Prashant Kumar Gupta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Figtree:ital,wght@0,400..700;1,400..700&display=swap">
+<style>
+/* Layout: one calm column, 1040px wide. Each section is a ledger row: a narrow
+   left "folio" column holds the section name, the wide right column holds the
+   entries. The only loud element is the marigold sunrise behind the portrait. */
+:root{
+  --bg:#F5FAF8; --surface:#FFFFFF; --ink:#12312F; --muted:#4B6462; --line:#D3E2DD;
+  --sun:#F4A917; --sun-soft:#FDEBC2; --link:#0A6A5C; --coral:#D9482B;
+  --display:"Bricolage Grotesque","Trebuchet MS","Segoe UI",system-ui,sans-serif;
+  --body:"Figtree","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --wrap:65rem; --gutter:clamp(1rem,4vw,2.5rem);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1F1E; --surface:#142B29; --ink:#EAF4F1; --muted:#A5BCB7; --line:#28423F;
+    --sun:#F7B93A; --sun-soft:#3A3016; --link:#72D6C1; --coral:#F08467; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1F1E; --surface:#142B29; --ink:#EAF4F1; --muted:#A5BCB7; --line:#28423F;
+  --sun:#F7B93A; --sun-soft:#3A3016; --link:#72D6C1; --coral:#F08467; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+a{color:var(--link);text-underline-offset:.18em;text-decoration-thickness:.08em}
+a:hover{text-decoration-thickness:.14em}
+:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.7rem}
+.brand{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ink);text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:.55rem}
+.brand::before{content:"";width:.8rem;height:.8rem;border-radius:50%;background:var(--sun);flex:none}
+.nav{display:flex;gap:1.25rem;overflow-x:auto;min-width:0;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem;white-space:nowrap;padding-block:.2rem}
+.nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(1.5rem,5vw,4rem);align-items:center;padding-block:clamp(2.5rem,7vw,5rem) clamp(2rem,5vw,3.5rem)}
+.eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--link)}
+.hero h1{font-size:clamp(2.3rem,6.2vw,4.1rem);font-weight:800;margin-top:.7rem}
+.hero h1 span{background:linear-gradient(transparent 68%,var(--sun) 68%,var(--sun) 92%,transparent 92%)}
+.lede{font-size:clamp(1.1rem,2vw,1.3rem);line-height:1.55;max-width:36rem;margin-top:1.2rem}
+.creds{color:var(--muted);margin-top:.8rem;max-width:36rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:.75rem 1.3rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink);font-size:1rem}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn.ghost{color:var(--ink);background:transparent}
+.btn:hover{transform:translateY(-1px)}
+.portrait{position:relative;width:13.5rem;height:16.5rem;flex:none}
+.portrait::before{content:"";position:absolute;inset:auto -1.2rem .4rem -1.2rem;height:15.5rem;border-radius:50%;background:var(--sun)}
+.portrait::after{content:"";position:absolute;right:-.9rem;top:.6rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--coral)}
+.portrait img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:10.625rem;height:14.5625rem;object-fit:cover;border-radius:6rem 6rem 1rem 1rem;border:4px solid var(--surface)}
+
+/* facts */
+.facts{border-block:1px solid var(--line);background:var(--surface)}
+.facts ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem 2rem;padding-block:1.6rem}
+.facts b{display:block;font-family:var(--display);font-size:1.75rem;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.facts span{display:block;color:var(--muted);font-size:.95rem;line-height:1.4;margin-top:.3rem}
+
+/* sections */
+.sec{scroll-margin-top:4rem;border-bottom:1px solid var(--line)}
+.sec .wrap{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:1.5rem 3rem;padding-block:clamp(2.5rem,6vw,4rem)}
+.sec h2{font-size:1.65rem;font-weight:700}
+.sec h2::after{content:"";display:block;width:2.4rem;height:.35rem;border-radius:999px;background:var(--sun);margin-top:.7rem}
+.col{display:grid;gap:2.2rem;min-width:0}
+.block{display:grid;gap:.9rem;min-width:0}
+.block h3{font-size:1.15rem;font-weight:700}
+.prose{display:grid;gap:1rem;max-width:40rem}
+.note{color:var(--muted);font-size:.95rem}
+
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips li{background:var(--sun-soft);color:var(--ink);padding:.3rem .85rem;border-radius:999px;font-size:.95rem;font-weight:500}
+
+.entries{display:grid}
+.entries li{display:grid;grid-template-columns:5rem minmax(0,1fr);gap:.2rem 1rem;padding-block:.85rem;border-top:1px solid var(--line)}
+.entries li:first-child{border-top:0;padding-top:0}
+.yr{font-variant-numeric:tabular-nums;font-weight:600;color:var(--link);white-space:nowrap}
+.entries strong{font-weight:600}
+.entries em{color:var(--muted)}
+.entries .where{display:block;color:var(--muted);font-size:.97rem}
+.plain li{grid-template-columns:minmax(0,1fr)}
+
+/* career ledger */
+.ledger{border-top:2px solid var(--ink);border-bottom:4px double var(--ink)}
+.ledger .head,.ledger li{display:grid;grid-template-columns:10.5rem minmax(0,1fr);gap:.1rem 1.5rem}
+.ledger .head{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-block:.55rem;border-bottom:1px solid var(--ink)}
+.ledger li{padding-block:.85rem;border-top:1px solid var(--line)}
+.ledger li:first-child{border-top:0}
+.ledger .when{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.97rem}
+.ledger strong{font-weight:600;display:block}
+.ledger .where{color:var(--muted);font-size:.97rem}
+
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1.25rem 1.35rem;display:grid;gap:.5rem;align-content:start}
+.card h3{font-size:1.1rem}
+.card p,.card li{color:var(--muted);font-size:.98rem;line-height:1.55}
+.card ul{display:grid;gap:.3rem}
+.card .tag{font-size:.75rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--link)}
+
+.contact{display:grid;gap:.9rem}
+.contact .row{display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .9rem}
+.contact .lbl{width:6.5rem;color:var(--muted);font-size:.95rem}
+.contact .val{font-weight:600;overflow-wrap:anywhere;min-width:0}
+.copy{font:inherit;font-size:.85rem;font-weight:600;color:var(--link);background:transparent;border:1.5px solid var(--line);border-radius:999px;padding:.2rem .75rem;cursor:pointer}
+.copy:hover{border-color:var(--link)}
+
+footer .wrap{padding-block:1.8rem 2.5rem;color:var(--muted);font-size:.92rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+
+@media (max-width:820px){
+  .sec .wrap{grid-template-columns:minmax(0,1fr);gap:1.4rem}
+  .facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cards{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr)}
+  .portrait{order:-1;margin-inline:1.2rem auto}
+  .ledger .head{display:none}
+  .ledger li,.entries li{grid-template-columns:minmax(0,1fr)}
+  .contact .lbl{width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home">Prashant Kumar Gupta</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#career">Career</a>
+      <a href="#beyond">Beyond class</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Accounting and Finance · Mahindra University</p>
+        <h1><span>Dr. Prashant</span> <span>Kumar Gupta</span></h1>
+        <p class="lede">I teach accounting, finance and enterprise risk at the School of Management, Mahindra University, Hyderabad. My research asks how corporate governance shapes the asset quality of banks.</p>
+        <p class="creds">Assistant Professor of Accounting and Finance · PhD in Finance, IIT Delhi</p>
+        <div class="actions">
+          <a class="btn primary" href="#research">Read my research</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="data:image/jpeg;base64,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" width="170" height="233" alt="Portrait of Dr. Prashant Kumar Gupta">
+      </div>
+    </div>
+  </section>
+
+  <section class="facts" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><b>10+ years</b><span>teaching, research and academic administration</span></li>
+        <li><b>4 articles</b><span>in international peer-reviewed journals</span></li>
+        <li><b>2 awards</b><span>for best paper at international conferences</span></li>
+        <li><b>Since 2011</b><span>Art of Living teacher for youth and professionals</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <div class="col">
+        <div class="prose">
+          <p>I am an Assistant Professor of Accounting and Finance at the School of Management, Mahindra University, Hyderabad. I hold a PhD in Finance from IIT Delhi and have spent over a decade teaching, researching and running academic programmes at institutions including Mahindra University, IIT Delhi and NALSAR University of Law.</p>
+          <p>My research covers corporate governance, bank asset quality and central bank digital currencies. It has been published in international journals and recognised with best paper awards, and I have worked on projects funded by the Government of India.</p>
+          <p>Alongside teaching, I chair the Ranking and Accreditation Committee, lead the university's NCC unit, which I set up in 2024, and look after the boys' hostel. Outside the university I am an Art of Living teacher and run leadership and well-being programmes for students, professionals and inmates of central jails.</p>
+        </div>
+        <div class="block">
+          <h3>Education</h3>
+          <ul class="entries">
+            <li><span class="yr">2022</span><span><strong>PhD in Finance</strong><span class="where">Indian Institute of Technology Delhi</span></span></li>
+            <li><span class="yr">2013</span><span><strong>MBA in Finance</strong><span class="where">Birla Institute of Technology, Mesra</span></span></li>
+            <li><span class="yr">2011</span><span><strong>B.Com (Accounts Honours)</strong><span class="where">St. Xavier's College (Autonomous), Ranchi</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="research">
+    <div class="wrap">
+      <h2>Research</h2>
+      <div class="col">
+        <div class="block">
+          <h3>Interests</h3>
+          <ul class="chips">
+            <li>Corporate governance</li>
+            <li>Bank asset quality and NPAs</li>
+            <li>Central bank digital currencies</li>
+            <li>Fintech and mobile payments</li>
+            <li>Microfinance</li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Journal articles</h3>
+          <ul class="entries">
+            <li><span class="yr">2024</span><span><strong>Navigating the interplay of legal frameworks and corporate governance: the impact on asset quality in an emerging economy.</strong> With S. Sharma. <em>Asian Journal of Business Ethics</em>, 1–32.</span></li>
+            <li><span class="yr">2023</span><span><strong>Literature review on effect of microfinance institutions on poverty in South Asian countries and their sustainability.</strong> With S. Sharma. <em>International Journal of Emerging Markets</em>, 18(8), 1827–1845.</span></li>
+            <li><span class="yr">2023</span><span><strong>Role of corporate governance in asset quality of banks: comparison between government-owned and private banks.</strong> With S. Sharma. <em>Managerial Finance</em>, 49(4), 724–740.</span></li>
+            <li><span class="yr">2022</span><span><strong>Corporate governance determinants of asset quality in an emerging economy: evidence from Indian banks.</strong> With S. Sharma. <em>Journal of Advances in Management Research</em>, 19(4), 560–577.</span></li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Under review</h3>
+          <ul class="entries plain">
+            <li><span><strong>Unravelling the Impact of Capital Adequacy Components on Non-Performing Assets: A Granular Study in India's Banking Sector.</strong> Submitted to <em>Studies in Economics and Finance</em>.</span></li>
+            <li><span><strong>Role of security and privacy factors in the mobile payments' adoption and usage: A Systematic Literature Review.</strong> Submitted to <em>Journal of Advances in Management Research</em>.</span></li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Working papers</h3>
+          <ul class="entries plain">
+            <li><span><strong>Mapping the CBDC Landscape in G-19 Economies</strong></span></li>
+            <li><span><strong>Understanding Central Bank Digital Currencies across Income Levels: A Systematic Review</strong></span></li>
+            <li><span><strong>Artificial Intelligence for Multi-Domain Financial Fraud Detection: A Comprehensive PRISMA Review of Algorithms, Challenges and Sector-Specific Evidence</strong></span></li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <h3>Conference presentations</h3>
+          <ul class="entries">
+            <li><span class="yr">2025</span><span><strong>Mapping the CBDC Landscape in G-19 Economies.</strong> With M. Bairaria and S. Jain. <span class="where">ICSSR Sponsored Conference on Fintech Innovation and Digital Practices, MNIT Jaipur, 17 April.</span></span></li>
+            <li><span class="yr">2024</span><span><strong>Exploring the Horizons of Fintech: A Systematic Review of the Existing Literature and Prospects for Future Research.</strong> With M. Gupta. <span class="where">ICOI, Hoa Sen University, Ho Chi Minh City, Vietnam, 23 July.</span></span></li>
+            <li><span class="yr">2024</span><span><strong>Impact of Insolvency and Bankruptcy Code, 2016 on Corporate Governance Determinants of Asset Quality in the Banking System: An Indian Perspective.</strong> With S. Sharma and Y. Bajaj. <span class="where">INDAM 2024, Goa Institute of Management, 11–13 January. <a href="https://indam2024.gim.ac.in/book-abstract/">Book of abstracts</a></span></span></li>
+            <li><span class="yr">2022</span><span><strong>Asset quality and corporate governance: what does an emerging economy tell us?</strong> With S. Sharma. <span class="where">16th Economics and Finance Conference, University of Economics, Prague, 12–15 June. <a href="https://www.iises.net/past-conferences/economic/16th-economics-finance-conference-prague/page-book-of-abstracts-16efc">Book of abstracts</a></span></span></li>
+            <li><span class="yr">2021</span><span><strong>Difference in NPAs of Public and Private Banks: Contribution of Corporate Governance in India.</strong> With S. Sharma. <span class="where">MDC 'Shodh Samagam', IIM Visakhapatnam, 9–10 December.</span></span></li>
+            <li><span class="yr">2019</span><span><strong>Microfinance Institutions: Understanding its impact on poverty in South Asia through a Systematic Review.</strong> With S. Sharma. <span class="where">AGBA's 16th World Conference, IIT Delhi, 2–4 July. <a href="http://www.agba.us/pdf/2019-Book-of-Abstracts.pdf">Book of abstracts</a></span></span></li>
+          </ul>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <span class="tag">Awards</span>
+            <h3>Recognition</h3>
+            <ul>
+              <li>Best paper award, ICSSR Sponsored Conference on Fintech Innovation and Digital Practices, MNIT Jaipur</li>
+              <li>Best paper award, AGBA Conference organised by IIM Rohtak, Millikin University (USA) and Gift Society</li>
+              <li>Paper selected among the top 10 in the Finance track, 1st Doctoral Colloquium, IIM Visakhapatnam</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Funded projects</span>
+            <h3>Government of India</h3>
+            <ul>
+              <li>Ministry of Food and Civil Supplies: evaluating the impact of implementing the National Food Security Act, 2013</li>
+              <li>Ministry of Agriculture and Farmers' Welfare: assessing the impact of the Sub-Mission on Seed and Planting Material</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="teaching">
+    <div class="wrap">
+      <h2>Teaching</h2>
+      <div class="col">
+        <div class="prose">
+          <p>I teach at undergraduate, postgraduate and PhD levels. My classes lean on cases and worked examples, so that the numbers in a set of accounts turn into decisions students can explain.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <span class="tag">Current</span>
+            <h3>Mahindra University</h3>
+            <ul>
+              <li>Financial Accounting</li>
+              <li>Management Accounting</li>
+              <li>Introductory Finance</li>
+              <li>Enterprise Risk Management</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Visiting</span>
+            <h3>NALSAR University of Law</h3>
+            <ul>
+              <li>Advanced Financial Management</li>
+              <li>Cost and Management Accounting</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Earlier</span>
+            <h3>PSIT Kanpur and PIBM Pune</h3>
+            <ul>
+              <li>Financial Accounting</li>
+              <li>Financial Management</li>
+              <li>Advanced Financial Management</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="tag">Credentials</span>
+            <h3>Certifications</h3>
+            <ul>
+              <li>IRM India certified faculty for Enterprise Risk Management, Level 1</li>
+              <li>UGC NET</li>
+            </ul>
+          </div>
+        </div>
+        <div class="block">
+          <h3>Continuing development</h3>
+          <p class="note">Case teaching workshop by Harvard Publishing and IIM Ahmedabad. Foundation of Mixed Methods Research at IIM Indore under the GIAN initiative. Time Series and Panel Data Analysis at Ramanujan College, University of Delhi. Advanced Panel Data Analysis at JS Institute of Commerce and Analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="leadership">
+    <div class="wrap">
+      <h2>Leadership</h2>
+      <div class="col">
+        <div class="prose">
+          <p>At Mahindra University I work across accreditation, academic governance, student life and campus administration.</p>
+        </div>
+        <ul class="entries">
+          <li><span class="yr">2025–</span><span><strong>Chair, Ranking and Accreditation Committee</strong><span class="where">Secured initial AACSB accreditation membership within 2.5 months and leading the roadmap to full accreditation by 2029.</span></span></li>
+          <li><span class="yr">2025–</span><span><strong>Member, PhD Selection Committee</strong><span class="where">Doctoral admissions processes and evaluation standards.</span></span></li>
+          <li><span class="yr">2025–</span><span><strong>Member, Anti-Drugs Committee</strong></span></li>
+          <li><span class="yr">2024–</span><span><strong>Founding Officer In-Charge, NCC Unit</strong><span class="where">Set up the unit from scratch and mentored cadets to National Camp selections and wins at Combined Annual Training Camps.</span></span></li>
+          <li><span class="yr">2024–</span><span><strong>Member, Internal Research Committee</strong><span class="where">Reviewing faculty research proposals and internal funding across Humanities, Engineering and Management.</span></span></li>
+          <li><span class="yr">2024–</span><span><strong>Member, University Discipline Committee</strong></span></li>
+          <li><span class="yr">2023–</span><span><strong>SPOC, Internal Quality Assurance Cell</strong><span class="where">Quality audits, academic data reporting and compliance for undergraduate programmes.</span></span></li>
+          <li><span class="yr">2023–</span><span><strong>Faculty In-Charge, Boys' Hostel</strong><span class="where">Discipline, welfare and grievance redressal for more than 2,000 residential students.</span></span></li>
+          <li><span class="yr">2022–25</span><span><strong>Member, Placement Committee, School of Management</strong></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="career">
+    <div class="wrap">
+      <h2>Career</h2>
+      <div class="col">
+        <div class="ledger">
+          <div class="head"><span>Period</span><span>Particulars</span></div>
+          <ul>
+            <li><span class="when">Jul 2022 – present</span><span><strong>Assistant Professor, School of Management</strong><span class="where">Mahindra University, Hyderabad</span></span></li>
+            <li><span class="when">Aug 2023 – May 2024</span><span><strong>Consultant</strong><span class="where">Australian Council for Educational Research, Delhi. Assessment design for Grade 10 accounting papers.</span></span></li>
+            <li><span class="when">2023</span><span><strong>Visiting Professor, Department of Management Studies</strong><span class="where">NALSAR University of Law, Hyderabad</span></span></li>
+            <li><span class="when">Jul 2017 – Jun 2022</span><span><strong>Teaching Assistant</strong><span class="where">IIT Delhi. Also PhD Student Coordinator (Finance) and member of the Institute Curriculum Review Committee.</span></span></li>
+            <li><span class="when">Mar 2017 – Jul 2017</span><span><strong>Academic Associate</strong><span class="where">Indian School of Business, Hyderabad</span></span></li>
+            <li><span class="when">Nov 2016 – Feb 2017</span><span><strong>Assistant Professor, Department of Business Administration</strong><span class="where">PSIT, Kanpur</span></span></li>
+            <li><span class="when">Jul 2013 – Nov 2016</span><span><strong>Batch In-Charge and Assistant Professor</strong><span class="where">PIBM, Pune</span></span></li>
+            <li><span class="when">Aug 2011 – present</span><span><strong>Teacher</strong><span class="where">Art of Living, across India</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="beyond">
+    <div class="wrap">
+      <h2>Beyond class</h2>
+      <div class="col">
+        <div class="cards">
+          <div class="card">
+            <span class="tag">Since 2011</span>
+            <h3>Art of Living</h3>
+            <p>I run personal excellence, leadership and well-being programmes for young people and professionals, including at IIT Delhi, IIT Dhanbad, IIM Ranchi, NLU Ranchi and BIT Mesra.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Service</span>
+            <h3>Programmes in central jails</h3>
+            <p>I have delivered stress management and rehabilitation programmes at Tihar Central Jail in Delhi and Hotwar Central Jail in Ranchi.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Since 2024</span>
+            <h3>National Cadet Corps</h3>
+            <p>I started Mahindra University's NCC unit and continue to mentor its cadets for camps and competitions.</p>
+          </div>
+          <div class="card">
+            <span class="tag">Sport</span>
+            <h3>Basketball</h3>
+            <p>Part of the team that won the national-level MHRAT basketball competition organised by the DAV group.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="col">
+        <div class="prose">
+          <p>I am happy to hear from students, co-authors, and institutions looking for a guest session or workshop.</p>
+        </div>
+        <div class="contact">
+          <div class="row"><span class="lbl">University</span><a class="val" id="mail-uni" href="mailto:prashant.gupta@mahindrauniversity.edu.in">prashant.gupta@mahindrauniversity.edu.in</a><button class="copy" id="copy-uni" type="button" data-copy="mail-uni">Copy</button></div>
+          <div class="row"><span class="lbl">Personal</span><a class="val" id="mail-own" href="mailto:kumar.prashantgupta@gmail.com">kumar.prashantgupta@gmail.com</a><button class="copy" id="copy-own" type="button" data-copy="mail-own">Copy</button></div>
+          <div class="row"><span class="lbl">Office</span><span class="val">040-68173214</span></div>
+          <div class="row"><span class="lbl">Address</span><span class="val">School of Management, Mahindra University, Hyderabad</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Prashant Kumar Gupta</span>
+    <a href="#home">Back to top</a>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.copy), text=el.textContent.trim();
+    function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1600)}
+    function select(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,select)}else{select()}
+  });
+});
+</script>
+</body>
+</html>
